@@ -27,7 +27,7 @@ int main(void)
 int hour(int w)
 {
     if(w < 12) return w;
-    else return 12 - w;
+    else return w - 12;
 }
 
 char *ampm(int w)

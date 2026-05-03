@@ -5,6 +5,10 @@ int add(int x , int y)
 {
     return x + y;
 }
+int sub(int x , int y)
+{
+    return abs(x - y);
+}
 
 void calculate(int x , int y , int(*operation)(int , int))
 {
@@ -20,6 +24,7 @@ int main(int argc , char *argv[])
         int x = atoi(argv[1]);
         int y = atoi(argv[2]);
         calculate(x , y , add);
+        calculate(x , y , sub);
     }
 
 

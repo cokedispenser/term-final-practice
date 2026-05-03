@@ -22,7 +22,7 @@ int sub(int *ptr, int size)
         result -= *(ptr + i);
         i++;
     }
-    return result;
+    return abs(result);
 }
 
 void calculate(int *arr, int size, int(*operation)(int *, int))
